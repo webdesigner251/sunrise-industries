@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gallery Page | Sunrise Industries</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+</head>
+
+<body>
+    <header id="mainHeader" class=" ">
+        <nav class="navbar py-2 navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="images/logo.svg" alt="logo" class="navlogo" height="80">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center contdiv" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-center  ">
+                        <li class="nav-item">
+                            <a class="nav-link  px-lg-3  px-xl-4 active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-lg-3 px-xl-4" href="about.html">About us</a>
+                        </li>
+
+                        <li class="dropdown bg-transparent">
+                            <button
+                                class="btn btn-secondary bg-transparent border-0 nav-link dropdown-toggle d-flex align-items-center"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="spices_and_agri_products.html">Spices & Agri
+                                        Products</a></li>
+                                <li><a class="dropdown-item" href="industrial_and_chemical_products.html">Industrial &
+                                        Specialty Chemicals</a></li>
+                                <li><a class="dropdown-item" href="common_salts.html">Common Salt</a></li>
+                                <li><a class="dropdown-item" href="pigments.html">Pigments</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-lg-3 px-xl-4" href="certificate.html">Certificate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-lg-3 px-xl-4" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-lg-3 px-xl-4" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-lg-none d-block button-hidden mx-auto px-0">
+                        <button
+                            class="outline-transparent-btn px-xl-5  border-0 btn-fill-bluee fw-semibold nav-contact font--18 d-flex gap-2 align-items-center">
+                            <svg width="24" height="24" viewBox="0 0 22 22" fill="none" class=" "
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.75 14.6667L13.6152 15.3408C13.9192 15.4016 14.2263 15.2514 14.3649 14.9741L13.75 14.6667ZM7.33333 8.25L7.02587 7.63508C6.74858 7.77373 6.59838 8.08082 6.65918 8.38483L7.33333 8.25ZM7.65785 8.08774L7.96531 8.70266H7.96531L7.65785 8.08774ZM8.54016 5.76708L9.17849 5.51175L8.54016 5.76708ZM7.79431 3.90245L7.15599 4.15778V4.15778L7.79431 3.90245ZM18.0975 14.2057L17.8422 14.844L18.0975 14.2057ZM16.2329 13.4598L16.4883 12.8215H16.4883L16.2329 13.4598ZM13.9123 14.3422L14.5272 14.6496V14.6496L13.9123 14.3422ZM14.8958 10.0833C14.8958 10.463 15.2036 10.7708 15.5833 10.7708C15.963 10.7708 16.2708 10.463 16.2708 10.0833H15.5833H14.8958ZM15.3042 8.68016L15.9394 8.41707L15.3042 8.68016ZM13.3198 6.69578L13.5829 6.06061L13.3198 6.69578ZM11.9167 5.72917C11.537 5.72917 11.2292 6.03697 11.2292 6.41667C11.2292 6.79636 11.537 7.10417 11.9167 7.10417V6.41667V5.72917ZM18.5625 10.0833C18.5625 10.463 18.8703 10.7708 19.25 10.7708C19.6297 10.7708 19.9375 10.463 19.9375 10.0833H19.25H18.5625ZM18.6918 7.27699L19.327 7.01389L18.6918 7.27699ZM14.723 3.30822L14.9861 2.67305V2.67305L14.723 3.30822ZM11.9167 2.0625C11.537 2.0625 11.2292 2.3703 11.2292 2.75C11.2292 3.1297 11.537 3.4375 11.9167 3.4375V2.75V2.0625ZM19.25 15.9079H18.5625V17.4167H19.25H19.9375V15.9079H19.25ZM4.58333 2.75V3.4375H6.09211V2.75V2.0625H4.58333V2.75ZM13.75 14.6667C13.8848 13.9925 13.885 13.9926 13.8852 13.9926C13.8853 13.9926 13.8854 13.9926 13.8855 13.9927C13.8857 13.9927 13.8859 13.9927 13.886 13.9928C13.8863 13.9928 13.8864 13.9928 13.8864 13.9928C13.8864 13.9928 13.8859 13.9927 13.8848 13.9925C13.8826 13.992 13.8783 13.9911 13.872 13.9897C13.8594 13.987 13.8387 13.9822 13.8104 13.9754C13.754 13.9616 13.6678 13.9394 13.5573 13.9068C13.3358 13.8417 13.0182 13.736 12.6458 13.5764C11.898 13.2559 10.9486 12.7263 10.1111 11.8889L9.625 12.375L9.13886 12.8611C10.1347 13.857 11.2479 14.4733 12.1042 14.8402C12.5339 15.0244 12.9038 15.1479 13.1693 15.226C13.3022 15.2651 13.4094 15.2929 13.4855 15.3114C13.5235 15.3207 13.5538 15.3276 13.5756 15.3324C13.5865 15.3348 13.5953 15.3367 13.602 15.3381C13.6053 15.3388 13.608 15.3394 13.6102 15.3398C13.6113 15.34 13.6123 15.3402 13.6131 15.3404C13.6135 15.3405 13.6139 15.3406 13.6143 15.3406C13.6144 15.3407 13.6147 15.3407 13.6147 15.3407C13.615 15.3408 13.6152 15.3408 13.75 14.6667ZM9.625 12.375L10.1111 11.8889C9.27369 11.0514 8.74409 10.102 8.42358 9.35418C8.264 8.98183 8.15829 8.66419 8.09316 8.44273C8.06063 8.33215 8.03836 8.24601 8.02463 8.18956C8.01777 8.16135 8.01305 8.1406 8.01026 8.12797C8.00887 8.12165 8.00796 8.11738 8.0075 8.11521C8.00728 8.11413 8.00716 8.11358 8.00716 8.11357C8.00716 8.11357 8.00719 8.1137 8.00724 8.11396C8.00727 8.11409 8.0073 8.11426 8.00734 8.11446C8.00736 8.11456 8.0074 8.11474 8.00741 8.11479C8.00744 8.11498 8.00748 8.11517 7.33333 8.25C6.65918 8.38483 6.65923 8.38504 6.65927 8.38526C6.65929 8.38535 6.65933 8.38558 6.65937 8.38575C6.65944 8.38609 6.65951 8.38646 6.6596 8.38688C6.65976 8.3877 6.65996 8.38866 6.66019 8.38976C6.66064 8.39197 6.66121 8.39473 6.66191 8.39805C6.6633 8.40467 6.66518 8.41348 6.6676 8.4244C6.67242 8.44624 6.67934 8.47651 6.68859 8.51454C6.70708 8.59058 6.73494 8.6978 6.77403 8.83071C6.85212 9.09623 6.97558 9.46609 7.15975 9.89582C7.52674 10.7521 8.14298 11.8653 9.13886 12.8611L9.625 12.375ZM7.33333 8.25L7.64079 8.86492L7.96531 8.70266L7.65785 8.08774L7.35039 7.47282L7.02587 7.63508L7.33333 8.25ZM8.54016 5.76708L9.17849 5.51175L8.43264 3.64712L7.79431 3.90245L7.15599 4.15778L7.90184 6.02241L8.54016 5.76708ZM18.0975 14.2057L18.3529 13.5674L16.4883 12.8215L16.2329 13.4598L15.9776 14.0982L17.8422 14.844L18.0975 14.2057ZM13.9123 14.3422L13.2973 14.0347L13.1351 14.3592L13.75 14.6667L14.3649 14.9741L14.5272 14.6496L13.9123 14.3422ZM16.2329 13.4598L16.4883 12.8215C15.271 12.3346 13.8837 12.862 13.2973 14.0347L13.9123 14.3422L14.5272 14.6496C14.7937 14.1166 15.4243 13.8768 15.9776 14.0982L16.2329 13.4598ZM7.65785 8.08774L7.96531 8.70266C9.13795 8.11634 9.66541 6.72903 9.17849 5.51175L8.54016 5.76708L7.90184 6.02241C8.12316 6.57572 7.88341 7.20631 7.35039 7.47282L7.65785 8.08774ZM6.09211 2.75V3.4375C6.56064 3.4375 6.98198 3.72276 7.15599 4.15778L7.79431 3.90245L8.43264 3.64712C8.04982 2.69006 7.12289 2.0625 6.09211 2.0625V2.75ZM19.25 15.9079H19.9375C19.9375 14.8771 19.3099 13.9502 18.3529 13.5674L18.0975 14.2057L17.8422 14.844C18.2772 15.018 18.5625 15.4394 18.5625 15.9079H19.25ZM17.4167 19.25V18.5625C9.69619 18.5625 3.4375 12.3038 3.4375 4.58333H2.75H2.0625C2.0625 13.0632 8.9368 19.9375 17.4167 19.9375V19.25ZM17.4167 19.25V19.9375C18.8089 19.9375 19.9375 18.8089 19.9375 17.4167H19.25H18.5625C18.5625 18.0495 18.0495 18.5625 17.4167 18.5625V19.25ZM2.75 4.58333H3.4375C3.4375 3.95051 3.95051 3.4375 4.58333 3.4375V2.75V2.0625C3.19112 2.0625 2.0625 3.19112 2.0625 4.58333H2.75ZM15.5833 10.0833H16.2708C16.2708 9.51154 16.1582 8.94534 15.9394 8.41707L15.3042 8.68016L14.6691 8.94326C14.8188 9.3047 14.8958 9.6921 14.8958 10.0833H15.5833ZM15.3042 8.68016L15.9394 8.41707C15.7206 7.88879 15.3998 7.40879 14.9955 7.00447L14.5094 7.49061L14.0233 7.97674C14.2999 8.25339 14.5193 8.58181 14.6691 8.94326L15.3042 8.68016ZM14.5094 7.49061L14.9955 7.00447C14.5912 6.60015 14.1112 6.27943 13.5829 6.06061L13.3198 6.69578L13.0567 7.33094C13.4182 7.48066 13.7466 7.7001 14.0233 7.97674L14.5094 7.49061ZM13.3198 6.69578L13.5829 6.06061C13.0547 5.84179 12.4885 5.72917 11.9167 5.72917V6.41667V7.10417C12.3079 7.10417 12.6953 7.18123 13.0567 7.33094L13.3198 6.69578ZM19.25 10.0833H19.9375C19.9375 9.03002 19.73 7.98703 19.327 7.01389L18.6918 7.27699L18.0566 7.54008C18.3906 8.34639 18.5625 9.21059 18.5625 10.0833H19.25ZM18.6918 7.27699L19.327 7.01389C18.9239 6.04076 18.3331 5.15655 17.5883 4.41175L17.1021 4.89788L16.616 5.38402C17.2331 6.00114 17.7226 6.73377 18.0566 7.54008L18.6918 7.27699ZM17.1021 4.89788L17.5883 4.41175C16.8434 3.66694 15.9592 3.07613 14.9861 2.67305L14.723 3.30822L14.4599 3.94338C15.2662 4.27737 15.9989 4.7669 16.616 5.38402L17.1021 4.89788ZM14.723 3.30822L14.9861 2.67305C14.013 2.26996 12.97 2.0625 11.9167 2.0625V2.75V3.4375C12.7894 3.4375 13.6536 3.6094 14.4599 3.94338L14.723 3.30822Z"
+                                    fill="#fffff" />
+                            </svg>
+                            <p class="mb-0"> Contact Us</p>
+
+                        </button>
+                    </div>
+
+                </div>
+                <div class="d-lg-block d-none ">
+                    <button
+                        class="outline-transparent-btn px-xl-5  border-0 btn-fill-bluee fw-semibold nav-contact font--18 d-flex gap-2 align-items-center">
+                        <svg width="24" height="24" viewBox="0 0 22 22" fill="none" class=" "
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.75 14.6667L13.6152 15.3408C13.9192 15.4016 14.2263 15.2514 14.3649 14.9741L13.75 14.6667ZM7.33333 8.25L7.02587 7.63508C6.74858 7.77373 6.59838 8.08082 6.65918 8.38483L7.33333 8.25ZM7.65785 8.08774L7.96531 8.70266H7.96531L7.65785 8.08774ZM8.54016 5.76708L9.17849 5.51175L8.54016 5.76708ZM7.79431 3.90245L7.15599 4.15778V4.15778L7.79431 3.90245ZM18.0975 14.2057L17.8422 14.844L18.0975 14.2057ZM16.2329 13.4598L16.4883 12.8215H16.4883L16.2329 13.4598ZM13.9123 14.3422L14.5272 14.6496V14.6496L13.9123 14.3422ZM14.8958 10.0833C14.8958 10.463 15.2036 10.7708 15.5833 10.7708C15.963 10.7708 16.2708 10.463 16.2708 10.0833H15.5833H14.8958ZM15.3042 8.68016L15.9394 8.41707L15.3042 8.68016ZM13.3198 6.69578L13.5829 6.06061L13.3198 6.69578ZM11.9167 5.72917C11.537 5.72917 11.2292 6.03697 11.2292 6.41667C11.2292 6.79636 11.537 7.10417 11.9167 7.10417V6.41667V5.72917ZM18.5625 10.0833C18.5625 10.463 18.8703 10.7708 19.25 10.7708C19.6297 10.7708 19.9375 10.463 19.9375 10.0833H19.25H18.5625ZM18.6918 7.27699L19.327 7.01389L18.6918 7.27699ZM14.723 3.30822L14.9861 2.67305V2.67305L14.723 3.30822ZM11.9167 2.0625C11.537 2.0625 11.2292 2.3703 11.2292 2.75C11.2292 3.1297 11.537 3.4375 11.9167 3.4375V2.75V2.0625ZM19.25 15.9079H18.5625V17.4167H19.25H19.9375V15.9079H19.25ZM4.58333 2.75V3.4375H6.09211V2.75V2.0625H4.58333V2.75ZM13.75 14.6667C13.8848 13.9925 13.885 13.9926 13.8852 13.9926C13.8853 13.9926 13.8854 13.9926 13.8855 13.9927C13.8857 13.9927 13.8859 13.9927 13.886 13.9928C13.8863 13.9928 13.8864 13.9928 13.8864 13.9928C13.8864 13.9928 13.8859 13.9927 13.8848 13.9925C13.8826 13.992 13.8783 13.9911 13.872 13.9897C13.8594 13.987 13.8387 13.9822 13.8104 13.9754C13.754 13.9616 13.6678 13.9394 13.5573 13.9068C13.3358 13.8417 13.0182 13.736 12.6458 13.5764C11.898 13.2559 10.9486 12.7263 10.1111 11.8889L9.625 12.375L9.13886 12.8611C10.1347 13.857 11.2479 14.4733 12.1042 14.8402C12.5339 15.0244 12.9038 15.1479 13.1693 15.226C13.3022 15.2651 13.4094 15.2929 13.4855 15.3114C13.5235 15.3207 13.5538 15.3276 13.5756 15.3324C13.5865 15.3348 13.5953 15.3367 13.602 15.3381C13.6053 15.3388 13.608 15.3394 13.6102 15.3398C13.6113 15.34 13.6123 15.3402 13.6131 15.3404C13.6135 15.3405 13.6139 15.3406 13.6143 15.3406C13.6144 15.3407 13.6147 15.3407 13.6147 15.3407C13.615 15.3408 13.6152 15.3408 13.75 14.6667ZM9.625 12.375L10.1111 11.8889C9.27369 11.0514 8.74409 10.102 8.42358 9.35418C8.264 8.98183 8.15829 8.66419 8.09316 8.44273C8.06063 8.33215 8.03836 8.24601 8.02463 8.18956C8.01777 8.16135 8.01305 8.1406 8.01026 8.12797C8.00887 8.12165 8.00796 8.11738 8.0075 8.11521C8.00728 8.11413 8.00716 8.11358 8.00716 8.11357C8.00716 8.11357 8.00719 8.1137 8.00724 8.11396C8.00727 8.11409 8.0073 8.11426 8.00734 8.11446C8.00736 8.11456 8.0074 8.11474 8.00741 8.11479C8.00744 8.11498 8.00748 8.11517 7.33333 8.25C6.65918 8.38483 6.65923 8.38504 6.65927 8.38526C6.65929 8.38535 6.65933 8.38558 6.65937 8.38575C6.65944 8.38609 6.65951 8.38646 6.6596 8.38688C6.65976 8.3877 6.65996 8.38866 6.66019 8.38976C6.66064 8.39197 6.66121 8.39473 6.66191 8.39805C6.6633 8.40467 6.66518 8.41348 6.6676 8.4244C6.67242 8.44624 6.67934 8.47651 6.68859 8.51454C6.70708 8.59058 6.73494 8.6978 6.77403 8.83071C6.85212 9.09623 6.97558 9.46609 7.15975 9.89582C7.52674 10.7521 8.14298 11.8653 9.13886 12.8611L9.625 12.375ZM7.33333 8.25L7.64079 8.86492L7.96531 8.70266L7.65785 8.08774L7.35039 7.47282L7.02587 7.63508L7.33333 8.25ZM8.54016 5.76708L9.17849 5.51175L8.43264 3.64712L7.79431 3.90245L7.15599 4.15778L7.90184 6.02241L8.54016 5.76708ZM18.0975 14.2057L18.3529 13.5674L16.4883 12.8215L16.2329 13.4598L15.9776 14.0982L17.8422 14.844L18.0975 14.2057ZM13.9123 14.3422L13.2973 14.0347L13.1351 14.3592L13.75 14.6667L14.3649 14.9741L14.5272 14.6496L13.9123 14.3422ZM16.2329 13.4598L16.4883 12.8215C15.271 12.3346 13.8837 12.862 13.2973 14.0347L13.9123 14.3422L14.5272 14.6496C14.7937 14.1166 15.4243 13.8768 15.9776 14.0982L16.2329 13.4598ZM7.65785 8.08774L7.96531 8.70266C9.13795 8.11634 9.66541 6.72903 9.17849 5.51175L8.54016 5.76708L7.90184 6.02241C8.12316 6.57572 7.88341 7.20631 7.35039 7.47282L7.65785 8.08774ZM6.09211 2.75V3.4375C6.56064 3.4375 6.98198 3.72276 7.15599 4.15778L7.79431 3.90245L8.43264 3.64712C8.04982 2.69006 7.12289 2.0625 6.09211 2.0625V2.75ZM19.25 15.9079H19.9375C19.9375 14.8771 19.3099 13.9502 18.3529 13.5674L18.0975 14.2057L17.8422 14.844C18.2772 15.018 18.5625 15.4394 18.5625 15.9079H19.25ZM17.4167 19.25V18.5625C9.69619 18.5625 3.4375 12.3038 3.4375 4.58333H2.75H2.0625C2.0625 13.0632 8.9368 19.9375 17.4167 19.9375V19.25ZM17.4167 19.25V19.9375C18.8089 19.9375 19.9375 18.8089 19.9375 17.4167H19.25H18.5625C18.5625 18.0495 18.0495 18.5625 17.4167 18.5625V19.25ZM2.75 4.58333H3.4375C3.4375 3.95051 3.95051 3.4375 4.58333 3.4375V2.75V2.0625C3.19112 2.0625 2.0625 3.19112 2.0625 4.58333H2.75ZM15.5833 10.0833H16.2708C16.2708 9.51154 16.1582 8.94534 15.9394 8.41707L15.3042 8.68016L14.6691 8.94326C14.8188 9.3047 14.8958 9.6921 14.8958 10.0833H15.5833ZM15.3042 8.68016L15.9394 8.41707C15.7206 7.88879 15.3998 7.40879 14.9955 7.00447L14.5094 7.49061L14.0233 7.97674C14.2999 8.25339 14.5193 8.58181 14.6691 8.94326L15.3042 8.68016ZM14.5094 7.49061L14.9955 7.00447C14.5912 6.60015 14.1112 6.27943 13.5829 6.06061L13.3198 6.69578L13.0567 7.33094C13.4182 7.48066 13.7466 7.7001 14.0233 7.97674L14.5094 7.49061ZM13.3198 6.69578L13.5829 6.06061C13.0547 5.84179 12.4885 5.72917 11.9167 5.72917V6.41667V7.10417C12.3079 7.10417 12.6953 7.18123 13.0567 7.33094L13.3198 6.69578ZM19.25 10.0833H19.9375C19.9375 9.03002 19.73 7.98703 19.327 7.01389L18.6918 7.27699L18.0566 7.54008C18.3906 8.34639 18.5625 9.21059 18.5625 10.0833H19.25ZM18.6918 7.27699L19.327 7.01389C18.9239 6.04076 18.3331 5.15655 17.5883 4.41175L17.1021 4.89788L16.616 5.38402C17.2331 6.00114 17.7226 6.73377 18.0566 7.54008L18.6918 7.27699ZM17.1021 4.89788L17.5883 4.41175C16.8434 3.66694 15.9592 3.07613 14.9861 2.67305L14.723 3.30822L14.4599 3.94338C15.2662 4.27737 15.9989 4.7669 16.616 5.38402L17.1021 4.89788ZM14.723 3.30822L14.9861 2.67305C14.013 2.26996 12.97 2.0625 11.9167 2.0625V2.75V3.4375C12.7894 3.4375 13.6536 3.6094 14.4599 3.94338L14.723 3.30822Z"
+                                fill="#fffff" />
+                        </svg>
+                        <p class="mb-0"> Contact Us</p>
+
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- breadcrumb section -->
+        <section class="about-breadcrumb-section">
+            <div class="  ">
+                <div class="container">
+                    <div class="row  align-items-center g-3 px-3">
+                        <h2 class="text-center font-oswald fw-semibold">
+                            Gallery</h2><br>
+                        <div class="col-12 text-center d-flex align-items-center justify-content-center gap-3">
+
+                            <a href="index.html" class="breadcrumb mb-0  d-flex align-items-center gap-2"><i
+                                    class="fa-sharp fa-solid fa-house"></i> HOme </a> | <a href="contact.html"
+                                class="breadcrumb mb-0 active">gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section  pt-120 pb-200 ">
+            <div class="container">
+                <div class="row pb-5 px-3">
+                    <div class="col-xl-8 overflow-hidden">
+                        <h3
+                            class="banner-subheading text-global-blue font--16 fw-bold fw-light my-2 p-0 text-uppercase">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
+                                viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M32 41c-4.878 0-9-4.121-9-9s4.122-9 9-9c4.879 0 9 4.121 9 9s-4.121 9-9 9zm0-16c-3.794 0-7 3.206-7 7s3.206 7 7 7 7-3.206 7-7-3.206-7-7-7zM47.133 19c-3.794 0-7-3.206-7-7s3.206-7 7-7 7 3.206 7 7-3.206 7-7 7zm0-12c-2.71 0-5 2.29-5 5s2.29 5 5 5 5-2.29 5-5-2.29-5-5-5zM14.262 23.379c-3.252 0-6-2.748-6-6s2.748-6 6-6 6 2.748 6 6-2.748 6-6 6zm0-10c-2.168 0-4 1.832-4 4s1.832 4 4 4 4-1.832 4-4-1.832-4-4-4z"
+                                        fill="#047fcd" opacity="1" data-original="#000000" class=""></path>
+                                    <path
+                                        d="M39.239 23.431a1 1 0 0 1-.797-1.603l4.272-5.646a1 1 0 0 1 1.595 1.207l-4.272 5.646a.998.998 0 0 1-.798.396zM22.74 25.367a.997.997 0 0 1-.636-.229l-4.62-3.808c-.426-.351-.487-.981-.135-1.407s.982-.485 1.408-.136l4.62 3.808a.999.999 0 0 1 .135 1.407.996.996 0 0 1-.772.365zM28 33a1 1 0 0 1-1-1 5 5 0 0 1 4.423-4.967.997.997 0 0 1 1.108.878.998.998 0 0 1-.878 1.108A3.001 3.001 0 0 0 29 32a1 1 0 0 1-1 1zM52 59c-3.794 0-7-3.206-7-7s3.206-7 7-7 7 3.206 7 7-3.206 7-7 7zm0-12c-2.71 0-5 2.29-5 5s2.29 5 5 5 5-2.29 5-5-2.29-5-5-5z"
+                                        fill="#047fcd" opacity="1" data-original="#000000" class=""></path>
+                                    <path
+                                        d="M47.758 48.758a.997.997 0 0 1-.707-.293l-7.272-7.272a.999.999 0 1 1 1.414-1.414l7.272 7.272a.999.999 0 0 1-.707 1.707zM10 49.336c-2.71 0-5-2.29-5-5s2.29-5 5-5 5 2.29 5 5-2.29 5-5 5zm0-8c-1.626 0-3 1.374-3 3s1.374 3 3 3 3-1.374 3-3-1.374-3-3-3z"
+                                        fill="#047fcd" opacity="1" data-original="#000000" class=""></path>
+                                    <path
+                                        d="M13.49 43.38a.999.999 0 0 1-.49-1.872l8.044-4.511a.998.998 0 0 1 1.361.383.998.998 0 0 1-.383 1.361l-8.044 4.511a.995.995 0 0 1-.488.128z"
+                                        fill="#047fcd" opacity="1" data-original="#000000" class=""></path>
+                                </g>
+                            </svg>Our Gallery
+                        </h3>
+                        <h2 class="section-heading pb-4">
+                            Our Work in Action
+                        </h2>
+                        <p class="text-gray font--18 fw-medium">Explore our gallery showcasing products, facilities,
+                            packaging,
+                            and quality processes across our diverse business verticals. From industrial and specialty
+                            chemicals to spices and agri commodities, these visuals reflect our commitment to quality,
+                            compliance, and global standards.</p>
+
+                    </div>
+
+                </div>
+                <div class="row g-3 px-3">
+                    <div class="col-lg-4 col-md-6 col-sm-12 img-card">
+                        <a href="images/slide-2.jpg" data-fancybox="gallery" class="gallery-item">
+                            <img src="images/slide-2.jpg" alt="Slide 1"><span class="plus-icon">+</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 img-card">
+                        <a href="images/slide-3.jpg" data-fancybox="gallery" class="gallery-item">
+                            <img src="images/slide-3.jpg" alt="Slide 2"><span class="plus-icon">+</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 img-card">
+                        <a href="images/slide-3.jpg" data-fancybox="gallery" class="gallery-item">
+                            <img src="images/slide-3.jpg" alt="Slide 3"><span class="plus-icon">+</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 img-card">
+                        <a href="images/slide-2.jpg" data-fancybox="gallery" class="gallery-item">
+                            <img src="images/slide-2.jpg" alt="Slide 1"><span class="plus-icon">+</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 img-card">
+                        <a href="images/slide-3.jpg" data-fancybox="gallery" class="gallery-item">
+                            <img src="images/slide-3.jpg" alt="Slide 2"><span class="plus-icon">+</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 img-card">
+                        <a href="images/slide-3.jpg" data-fancybox="gallery" class="gallery-item">
+                            <img src="images/slide-3.jpg" alt="Slide 3"><span class="plus-icon">+</span>
+                        </a>
+                    </div>
+                    <!-- Add more gallery items as needed -->
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="pt-120 pb-120 position-relative">
+        <div class="container position-relative footer-top-box shadow-lg ">
+            <div class="row mx-auto g-4">
+                <div class="col-md-3">
+                    <div class="logo-container">
+                        <a href="/">
+                        <img src="images/logo.svg" height="80" width="100" class="  w-100 " alt="logo">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-md-9">
+                    <div class="row g-3">
+                        <div class="col-lg-4 p-0  b-left d-flex align-items-center ">
+                            <div class="pq-footer-items px-4">
+                                <span class=" footer-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+
+                                <div class="pq-footer-items-info">
+                                    <h4>Address</h4>
+                                    <span>Gujarat</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-0 b-left d-flex align-items-center">
+                            <div class="pq-footer-items px-4">
+                                <span class=" footer-icon">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                </span>
+
+                                <div class="pq-footer-items-info">
+                                    <h4>Call Us On</h4>
+                                    <span> <a href="tel:+180045647824">
+                                            +1800-001-6555
+                                        </a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-0  d-flex align-items-center">
+                            <div class="pq-footer-items px-4">
+                                <span class=" footer-icon">
+                                    <i class="fa-solid fa-envelope"></i></span>
+                                <div class="pq-footer-items-info">
+                                    <h4>Email Us</h4>
+                                    <span><a href="mailto:riseahead@gmail.com">
+                                            riseahead@gmail.com
+                                        </a></span><br>
+                                    <span class="word-wrap text-wrap"> <a href="mailto:sunriseindustries24@gmail.com"
+                                            class="text-wrap">
+                                            sunriseindustries24@gmail.com
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" container container-footer px-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- <img src="images/logo.svg" height="80"> -->
+                    <p class="footer-desc">Sunrise Industry is a growing manufacturer and exporter of speciality
+                        chemicals, offering
+                        reliable solutions to multiple industries across global markets.</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="footer-title">Quick Links</p>
+
+                    <ul class="footer-links d-flex flex-column gap-3 ps-0 text-uppercase">
+                        <li>
+                            <a href="about.html"><i class="fa-solid fa-angles-right"></i> About Us</a>
+                        </li>
+                        <li>
+                            <a href="certificate.html"><i class="fa-solid fa-angles-right"></i> certificate</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html"><i class="fa-solid fa-angles-right"></i> Gallery</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"><i class="fa-solid fa-angles-right"></i> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-uppercase">
+                    <p class="footer-title">Products</p>
+
+                    <ul class="footer-links d-flex flex-column gap-3 ps-0">
+                        <li>
+                            <a href="spices_and_agri_products.html"><i class="fa-solid fa-angles-right"></i> Spices &
+                                Agri Products </a>
+                        </li>
+                        <li>
+                            <a href="industrial_and_chemical_products.html"><i class="fa-solid fa-angles-right"></i>
+                                Industrial & Speciality Chemicals</a>
+                        </li>
+                        <li>
+                            <a href="common_salts.html"><i class="fa-solid fa-angles-right"></i> Common Salt</a>
+                        </li>
+                        <li>
+                            <a href="pigments.html"><i class="fa-solid fa-angles-right"></i> Pigments</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="footer-title">Follow Us</p>
+
+                    <ul class="footer-links d-flex flex-row gap-3 ps-0 ">
+                        <li>
+                            <a href=""> <i class="fa-brands fa-facebook fs-3"></i></a>
+                        </li>
+
+                        <li>
+                            <a href=""><i class="fa-brands fa-linkedin fs-3"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-x-twitter fs-3"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox='gallery']", {
+            toolbar: {
+                display: [
+                    "close"  // ensures the close button is visible
+                ]
+            },
+            closeButton: "top" // optional: puts the close button at top
+        });
+    </script>
+
+
+    <!-- aos library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            easing: 'linear',
+            once: true,
+            mirror: false,
+            offset: 100,
+            disable: function () {
+                return window.innerWidth < 768;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
