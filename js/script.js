@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(data => {
                 if (data.success) {
                     result.style.color = "green";
-                    result.innerText = "Form submitted successfully!";
+                    result.innerText = "Form submitted successfully !";
                     form.reset();
                 } else {
                     result.style.color = "red";
