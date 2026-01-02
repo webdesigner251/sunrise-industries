@@ -28,7 +28,7 @@ function startAutoCloseTimer() {
     }, 3000);
 }
 
-// Close menu when clicking outside
+
 document.addEventListener('click', function (event) {
     const isClickInside = navbarCollapse.contains(event.target);
 
@@ -38,7 +38,7 @@ document.addEventListener('click', function (event) {
     }
 });
 
-// Reset timer when menu is opened
+
 toggler.addEventListener('click', function () {
     if (!navbarCollapse.classList.contains('show')) {
         // Menu is opening, start auto-close timer
